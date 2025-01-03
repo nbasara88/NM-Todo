@@ -95,10 +95,10 @@
 		17E29E8B2D2783C2000CE92D /* NM Todo App */ = {
 			isa = PBXGroup;
 			children = (
-				17E29E8C2D2783C2000CE92D /* NM_Todo_AppApp.swift */,
-				17E29E8E2D2783C2000CE92D /* ContentView.swift */,
-				17E29E902D2783C7000CE92D /* Assets.xcassets */,
-				17E29E952D2783C7000CE92D /* NM_Todo_App.entitlements */,
+				BBF845AA2D28A47F005CB7BB /* Services */,
+				BBF845A92D28A472005CB7BB /* Resources */,
+				BBF845A82D28A460005CB7BB /* Features */,
+				BBF845A72D28A450005CB7BB /* Base */,
 				17E29E922D2783C7000CE92D /* Preview Content */,
 			);
 			path = "NM Todo App";
@@ -127,6 +127,70 @@
 				17E29EAA2D2783C7000CE92D /* NM_Todo_AppUITestsLaunchTests.swift */,
 			);
 			path = "NM Todo AppUITests";
+			sourceTree = "<group>";
+		};
+		BBF845A72D28A450005CB7BB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				17E29E8C2D2783C2000CE92D /* NM_Todo_AppApp.swift */,
+				17E29E952D2783C7000CE92D /* NM_Todo_App.entitlements */,
+				17E29E8E2D2783C2000CE92D /* ContentView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BBF845A82D28A460005CB7BB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BBF845AB2D28A491005CB7BB /* FeatureExample1 */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BBF845A92D28A472005CB7BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17E29E902D2783C7000CE92D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BBF845AA2D28A47F005CB7BB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BBF845AB2D28A491005CB7BB /* FeatureExample1 */ = {
+			isa = PBXGroup;
+			children = (
+				BBF845AE2D28A4A2005CB7BB /* ViewModels */,
+				BBF845AD2D28A49E005CB7BB /* Views */,
+				BBF845AC2D28A499005CB7BB /* Model */,
+			);
+			path = FeatureExample1;
+			sourceTree = "<group>";
+		};
+		BBF845AC2D28A499005CB7BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBF845AD2D28A49E005CB7BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BBF845AE2D28A4A2005CB7BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,7 +484,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "NM Todo App/NM_Todo_App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "NM Todo App/Base/NM_Todo_App.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -448,7 +513,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "NM Todo App/NM_Todo_App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "NM Todo App/Base/NM_Todo_App.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
