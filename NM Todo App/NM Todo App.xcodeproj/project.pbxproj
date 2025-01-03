@@ -3,13 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E29E8D2D2783C2000CE92D /* NM_Todo_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29E8C2D2783C2000CE92D /* NM_Todo_AppApp.swift */; };
-		17E29E8F2D2783C2000CE92D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29E8E2D2783C2000CE92D /* ContentView.swift */; };
-		17E29E912D2783C7000CE92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E29E902D2783C7000CE92D /* Assets.xcassets */; };
 		17E29E942D2783C7000CE92D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E29E932D2783C7000CE92D /* Preview Assets.xcassets */; };
 		17E29E9F2D2783C7000CE92D /* NM_Todo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29E9E2D2783C7000CE92D /* NM_Todo_AppTests.swift */; };
 		17E29EA92D2783C7000CE92D /* NM_Todo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29EA82D2783C7000CE92D /* NM_Todo_AppUITests.swift */; };
@@ -35,17 +32,20 @@
 
 /* Begin PBXFileReference section */
 		17E29E892D2783C2000CE92D /* NM Todo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NM Todo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E29E8C2D2783C2000CE92D /* NM_Todo_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppApp.swift; sourceTree = "<group>"; };
-		17E29E8E2D2783C2000CE92D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		17E29E902D2783C7000CE92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17E29E932D2783C7000CE92D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		17E29E952D2783C7000CE92D /* NM_Todo_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NM_Todo_App.entitlements; sourceTree = "<group>"; };
 		17E29E9A2D2783C7000CE92D /* NM Todo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NM Todo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E29E9E2D2783C7000CE92D /* NM_Todo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppTests.swift; sourceTree = "<group>"; };
 		17E29EA42D2783C7000CE92D /* NM Todo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NM Todo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E29EA82D2783C7000CE92D /* NM_Todo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppUITests.swift; sourceTree = "<group>"; };
 		17E29EAA2D2783C7000CE92D /* NM_Todo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BBF845812D28A081005CB7BB /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		BBF845862D28A094005CB7BB /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
+		BBF8458A2D28A09B005CB7BB /* Base */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Base; sourceTree = "<group>"; };
+		BBF8458E2D28A0ED005CB7BB /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17E29E862D2783C2000CE92D /* Frameworks */ = {
@@ -95,10 +95,10 @@
 		17E29E8B2D2783C2000CE92D /* NM Todo App */ = {
 			isa = PBXGroup;
 			children = (
-				17E29E8C2D2783C2000CE92D /* NM_Todo_AppApp.swift */,
-				17E29E8E2D2783C2000CE92D /* ContentView.swift */,
-				17E29E902D2783C7000CE92D /* Assets.xcassets */,
-				17E29E952D2783C7000CE92D /* NM_Todo_App.entitlements */,
+				BBF845862D28A094005CB7BB /* Features */,
+				BBF845812D28A081005CB7BB /* Services */,
+				BBF8458E2D28A0ED005CB7BB /* Resources */,
+				BBF8458A2D28A09B005CB7BB /* Base */,
 				17E29E922D2783C7000CE92D /* Preview Content */,
 			);
 			path = "NM Todo App";
@@ -143,6 +143,12 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BBF845812D28A081005CB7BB /* Services */,
+				BBF845862D28A094005CB7BB /* Features */,
+				BBF8458A2D28A09B005CB7BB /* Base */,
+				BBF8458E2D28A0ED005CB7BB /* Resources */,
 			);
 			name = "NM Todo App";
 			productName = "NM Todo App";
@@ -234,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E29E942D2783C7000CE92D /* Preview Assets.xcassets in Resources */,
-				17E29E912D2783C7000CE92D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E29E8F2D2783C2000CE92D /* ContentView.swift in Sources */,
-				17E29E8D2D2783C2000CE92D /* NM_Todo_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
