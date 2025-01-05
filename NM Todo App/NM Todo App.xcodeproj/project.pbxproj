@@ -15,6 +15,7 @@
 		17E29EA92D2783C7000CE92D /* NM_Todo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29EA82D2783C7000CE92D /* NM_Todo_AppUITests.swift */; };
 		17E29EAB2D2783C7000CE92D /* NM_Todo_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E29EAA2D2783C7000CE92D /* NM_Todo_AppUITestsLaunchTests.swift */; };
 		17EABF4F2D28C50D00561B7B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EABF4E2D28C50D00561B7B /* TabView.swift */; };
+		BBF845B02D2B22FE005CB7BB /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF845AF2D2B22FE005CB7BB /* CustomTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		17E29EA82D2783C7000CE92D /* NM_Todo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppUITests.swift; sourceTree = "<group>"; };
 		17E29EAA2D2783C7000CE92D /* NM_Todo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NM_Todo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		17EABF4E2D28C50D00561B7B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		BBF845AF2D2B22FE005CB7BB /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				17EABF4E2D28C50D00561B7B /* TabView.swift */,
+				BBF845AF2D2B22FE005CB7BB /* CustomTextView.swift */,
 			);
 			path = "TabView Feature";
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			files = (
 				17E29E8F2D2783C2000CE92D /* ContentView.swift in Sources */,
 				17EABF4F2D28C50D00561B7B /* TabView.swift in Sources */,
+				BBF845B02D2B22FE005CB7BB /* CustomTextView.swift in Sources */,
 				17E29E8D2D2783C2000CE92D /* NM_Todo_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +482,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NM Todo App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L6K3A6G3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -507,6 +512,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NM Todo App/Preview Content\"";
+				DEVELOPMENT_TEAM = 2L6K3A6G3C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

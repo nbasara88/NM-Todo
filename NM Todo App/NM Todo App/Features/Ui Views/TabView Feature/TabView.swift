@@ -7,14 +7,23 @@
 
 import SwiftUI
 
+struct Todo: Identifiable, Hashable {
+    let id: UUID
+    let task: String
+    let time: Int
+}
+
 struct CustomTab: View {
     @State private var selectedTab = 0
+
+    @State var todos: [Todo]
 
     var body: some View {
         ZStack {
             // Main TabView
+
             TabView(selection: $selectedTab) {
-                Text("Todays to do list")
+                CustomTextView(randomInt: $todos)
                     .tabItem {
                         Label("Today", systemImage: "calendar")
                     }
@@ -45,7 +54,8 @@ struct CustomTab: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        print("Floating button tapped!")
+                        let timeToComplete = Int.random(in: 1...10)
+                        todos.append(Todo(id: UUID(), task: "New Todo Task", time: timeToComplete))
                     }) {
                         Image(systemName: "plus")
                         .foregroundColor(.white)
@@ -55,7 +65,7 @@ struct CustomTab: View {
                         .shadow(color: .gray.opacity(0.5), radius: 5, x: 0, y: 3)
                     }
                     .padding(.trailing, 19)
-                    .padding(.bottom, 85)
+                    .padding(.bottom, 95)
                 }
             }
             .ignoresSafeArea()
@@ -64,5 +74,5 @@ struct CustomTab: View {
 }
 
 #Preview {
-    CustomTab()
+    CustomTab(todos: [])
 }
